@@ -5,11 +5,14 @@
     "build": "nitro build",
     "dev": "nitro dev",
     "preview": "node .output/server/index.mjs",
-    "format": "oxfmt && oxfmt --check"
+    "format": "oxfmt && oxfmt --check",
+    "lint": "oxlint --type-aware"
   },
   "devDependencies": {
     "h3": "^1.15.4",
     "nitropack": "^2.12.4",
-    "oxfmt": "^0.21.0"
+    "oxfmt": "^0.21.0",
+    "oxlint": "^1.36.0",
+    "oxlint-tsgolint": "^0.10.1"
   }
 }
